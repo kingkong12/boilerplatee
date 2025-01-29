@@ -20,16 +20,33 @@
 4. **Open your browser:**
    Navigate to `http://localhost:3000` to see the app running.
 
-5. Assumptions
+5. Packages with boilerplate
 
-- Assumption: For devices with resolutions below 1280px, the app is treated as running on a mobile device. The current production version includes additional breakpoints around 780px, which help prevent image overlap issues.
+   - "react": "^18.3.1", < -- DONE ✅
+   - "react-dom": "^18.3.1", < -- DONE✅
+   - "styled-components": "^6.1.14" < -- DONE✅
 
-- The bold font characters are not loading properly due to asset-related issue.
+- STEPS : ( Commit ).
 
-- To optimize performance, we propose combining the SVGs for the circular icon and desktop/mobile images. While responsive programming for these elements is possible, and the code has been done, but icons need to be fixed. Therefore, to avoid overengineering, I am deprioritizing the implementation for now.
+- Remove the OLD code first << --------------- Active
+- Add all configs to the APP FILE
+- clean up and define helper methods.
 
-- Margins and padding around the forms, text, and images have been assumed since Figma provided only a read-only mode (with no access to specific margin and padding details). Additionally, the reference example contained negative margins, which are considered an incorrect implementation.
+  - Media query
+  - Pix to rem function
+  - initialize the breakPoints correctly with min + max + in between.
+  -
 
-- The “Don’t remember your password” text or button is now tabbable. This ensures that users navigating via the keyboard can focus on this element seamlessly. The current version of production app doens't have these
+- router Configuration
+  - initalize hte mock router file
+- Make ts less strict and allow
 
--While a ripple effect can enhance button interactions visually, it has been excluded from this implementation for now.
+  - Make sure the intellisi are working for the TS
+
+- Learn to turn of and off github co pilot
+- add any any one UI library that uses the Styled component.
+
+- Unit testing ? DO you wan to add?
+- add paper css : https://www.getpapercss.com/
+- also add icon++
+- Make import relatives and make sure to sorth them as well

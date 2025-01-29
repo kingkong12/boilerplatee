@@ -1,9 +1,9 @@
-import Login from './pages/Login'
+import Placeholder from './pages/Placeholder'
 
 function App() {
   return (
     <>
-      <Login />
+      <Placeholder />
     </>
   )
 }
