@@ -1,3 +1,2 @@
-import LoginForm from './loginForm/LoginForm'
-
-export { LoginForm }
+const moleculePlaceHolder = 'molecule.placeholder'
+export { moleculePlaceHolder }

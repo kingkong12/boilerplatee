@@ -1,17 +1,15 @@
 const theme = {
-  colors: {
-    primary: '#EA731F',
-    secondary: '#4B4B4B',
-    chineseSilver: '#CCCCCC',
-    blackShade: '#5E6B75',
-  },
-  fontColor: {
-    primary: '#333333',
-  },
-  static: {
-    white: '#FFFFFF',
-    blackCoffee: '#11111',
-    blueShade: '#486082',
+  staticColors: {
+    primary: '#007bff',
+    secondary: '#6c757d',
+    success: '#28a745',
+    danger: '#dc3545',
+    warning: '#ffc107',
+    info: '#17a2b8',
+    light: '#f8f9fa',
+    dark: '#343a40',
+    white: '#ffffff',
+    black: '#000000',
   },
 }
 
