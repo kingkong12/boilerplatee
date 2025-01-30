@@ -4,16 +4,20 @@ import theme from './css/theme'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Placeholder from './pages/Placeholder'
+import { Provider } from 'react-redux'
+import { store } from './redux/store/store'
 
 function App() {
   return (
     <BrowserRouter>
       <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Routes>
-          <Route path="/" element={<div>ROOT PAGE</div>} />
-          <Route path="/placeholder" element={<Placeholder />} />
-        </Routes>
+        <Provider store={store}>
+          <GlobalStyle />
+          <Routes>
+            <Route path="/" element={<div>ROOT PAGE</div>} />
+            <Route path="/placeholder" element={<Placeholder />} />
+          </Routes>
+        </Provider>
       </ThemeProvider>
     </BrowserRouter>
   )
