@@ -19,34 +19,3 @@
 
 4. **Open your browser:**
    Navigate to `http://localhost:3000` to see the app running.
-
-5. Packages with boilerplate
-
-   - "react": "^18.3.1", < -- DONE ✅
-   - "react-dom": "^18.3.1", < -- DONE✅
-   - "styled-components": "^6.1.14" < -- DONE✅
-
-- STEPS : ( Commit ).
-
-- Remove the OLD code first < -- DONE✅
-- Add all configs to the APP FILE < -- DONE✅
-- clean up and define helper methods. << ----- ---------- Active 1./2 time.
-
-  - Media query < -- DONE✅
-  - Pix to rem function < -- DONE✅
-  - initialize the breakPoints correctly with min + max + in between. < -- DONE✅
-    -Popery set theme file with all static coloes and other things < -- DONE✅
-
-- router Configuration
-  - initalize hte mock router file
-- Make ts less strict and allow
-
-  - Make sure the intellisi are working for the TS
-
-- Learn to turn of and off github co pilot
-- add any any one UI library that uses the Styled component.
-
-- Unit testing ? DO you wan to add?
-- add paper css : https://www.getpapercss.com/
-- also add icon++
-- Make import relatives and make sure to sorth them as well
