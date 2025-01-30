@@ -28,14 +28,14 @@
 
 - STEPS : ( Commit ).
 
-- Remove the OLD code first << --------------- Active
-- Add all configs to the APP FILE
-- clean up and define helper methods.
+- Remove the OLD code first < -- DONE✅
+- Add all configs to the APP FILE < -- DONE✅
+- clean up and define helper methods. << ----- ---------- Active 1./2 time.
 
-  - Media query
-  - Pix to rem function
-  - initialize the breakPoints correctly with min + max + in between.
-  -
+  - Media query < -- DONE✅
+  - Pix to rem function < -- DONE✅
+  - initialize the breakPoints correctly with min + max + in between. < -- DONE✅
+    -Popery set theme file with all static coloes and other things < -- DONE✅
 
 - router Configuration
   - initalize hte mock router file

@@ -17,10 +17,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: Arial, sans-serif;
     line-height: 1.6;
     font-size: var(--default-font-size, 16px);
-    color: ${colors.fontColor.primary};
     height: 100%;
     display: flex;
-
     }
 
     #root {

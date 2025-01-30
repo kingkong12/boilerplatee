@@ -1,54 +1,54 @@
 const sizes = {
-  LargeDesktop: 1920,
-  desktop: 1440,
-  smallLargeDesktop: 1280,
-  mobile: 375,
+  mobile: 480,
+  tablet: 768,
+  largeDevice: 1200,
+  extraLargeDevice: 1600,
 }
 
-export const media = {
-  // LargeDesktop: (styles: string) => `
-  //   @media (max-width: ${sizes.LargeDesktop}px) {
-  //     ${styles}
-  //   }
-  // `,
-  // desktop: (styles: string) => `
-  //   @media (max-width: ${sizes.desktop}px) {
-  //     ${styles}
-  //   }
-  // `,
-  minLargeDesktop: (styles: string) => `
-  @media (min-width: ${sizes.LargeDesktop}px) {
+const minMediaQuery = (size: number, styles: string) => `
+  @media (min-width: ${size}px) {
     ${styles}
   }
-`,
-  minDesktop: (styles: string) => `
-    @media (min-width: ${sizes.desktop}px) {
-      ${styles}
-    }
-  `,
-  // smallLargeDesktop: (styles: string) => `
-  //   @media (max-width: ${sizes.smallLargeDesktop}px) {
-  //     ${styles}
-  //   }
-  // `,
-  minSmallLargeDesktop: (styles: string) => `
-    @media (min-width: ${sizes.smallLargeDesktop}px) {
-      ${styles}
-    }
-  `,
-  mobile: (styles: string) => `
-    @media (max-width: ${sizes.mobile}px) {
-      ${styles}
-    }
-  `,
-  // minMobile: (styles: string) => `
-  //   @media (min-width: ${sizes.mobile}px) {
-  //     ${styles}
-  //   }
-  // `,
-  // hideOnMobile: () => `
-  //   @media (max-width: ${sizes.mobile}px) {
-  //     display: none;
-  //   }
-  // `,
+`
+
+const maxMediaQuery = (size: number, styles: string) => `
+  @media (max-width: ${size}px) {
+    ${styles}
+  }
+`
+
+const betweenMediaQuery = (
+  minSize: number,
+  maxSize: number,
+  styles: string
+) => `
+  @media (min-width: ${minSize}px) and (max-width: ${maxSize}px) {
+    ${styles}
+  }
+`
+
+export const media = {
+  minLargeDesktop: (styles: string) => minMediaQuery(sizes.largeDevice, styles),
+  minDesktop: (styles: string) => minMediaQuery(sizes.tablet, styles),
+  minSmallLargeDesktop: (styles: string) => minMediaQuery(sizes.mobile, styles),
+  mobile: (styles: string) => maxMediaQuery(sizes.mobile, styles),
+  maxTablet: (styles: string) => maxMediaQuery(sizes.tablet, styles),
+  maxLargeDevice: (styles: string) => maxMediaQuery(sizes.largeDevice, styles),
+  maxExtraLargeDevice: (styles: string) =>
+    maxMediaQuery(sizes.extraLargeDevice, styles),
+  betweenMobileAndTablet: (styles: string) =>
+    betweenMediaQuery(sizes.mobile, sizes.tablet, styles),
+  betweenTabletAndLargeDevice: (styles: string) =>
+    betweenMediaQuery(sizes.tablet, sizes.largeDevice, styles),
 }
+
+// Usage example:
+// import { media } from './utils/mediaQueries';
+// const styles = `
+//   ${media.mobile(`
+//     background-color: red;
+//   `)}
+//   ${media.minDesktop(`
+//     background-color: blue;
+//   `)}
+// `;
